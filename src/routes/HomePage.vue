@@ -1,14 +1,16 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div :class="$style.wrapper">
+    <h1>Home</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'HomePage'
 }
 </script>
 
 <style lang="scss" module>
+  .wrapper {
+  }
 </style>
