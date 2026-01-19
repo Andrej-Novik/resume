@@ -136,4 +136,25 @@ export default {
     }
   }
 }
+
+@media (max-width: 968px) {
+  .workItem {
+    padding: 16px;
+  }
+  .workHeader {
+    gap: 8px;
+  }
+  .workIdentity {
+    gap: 8px;
+  }
+  .workTitle {
+    font-size: 16px;
+  }
+  .workRole {
+    font-size: 14px;
+  }
+  .workBadge {
+    font-size: 12px;
+  }
+}
 </style>

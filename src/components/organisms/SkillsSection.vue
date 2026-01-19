@@ -127,17 +127,41 @@ export default {
 }
 
 @media (max-width: 968px) {
+  .skillsSection {
+    padding: 16px;
+  }
   .skillsHeader {
-    flex-direction: column;
-    gap: 20px;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: center;
   }
 
   .colorLegend {
-    flex-wrap: wrap;
+    gap: 12px;
+    flex-wrap: nowrap;
   }
 
   .skillsList {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legendItem {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 0 10px 0;
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .legendColor {
+    width: 60px;
+    height: 4px;
+    border-radius: 6px;
+  }
+
+  .skillsCategoryTitle {
+    font-size: 14px;
   }
 }
 </style>

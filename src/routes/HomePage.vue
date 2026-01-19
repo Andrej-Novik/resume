@@ -2,17 +2,15 @@
   <div :class="$style.resume">
     <div :class="$style.container">
       <div :class="$style.topSection">
-        <ProfileSidebar :contacts="resumeData.contacts" />
+        <ProfileSidebar :class="$style.sidebarBlock" :contacts="resumeData.contacts" />
 
-        <div :class="$style.rightColumn">
-          <div :class="$style.nameBlock">
-            <h1 :class="$style.name">{{ resumeData.personal.name }}</h1>
-            <p :class="$style.title">{{ resumeData.personal.title }}</p>
-          </div>
+        <div :class="$style.nameBlock">
+          <h1 :class="$style.name">{{ resumeData.personal.name }}</h1>
+          <p :class="$style.title">{{ resumeData.personal.title }}</p>
+        </div>
 
-          <div :class="$style.aboutBlock">
-            <AboutSection :paragraphs="resumeData.about" />
-          </div>
+        <div :class="$style.aboutBlock">
+          <AboutSection :paragraphs="resumeData.about" />
         </div>
       </div>
 
@@ -71,14 +69,14 @@ export default {
 
 .topSection {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1.6fr 2fr;
+  grid-template-rows: auto auto;
   gap: 20px;
 }
 
-.rightColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.sidebarBlock {
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .nameBlock {
@@ -89,6 +87,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .name {
@@ -109,16 +109,50 @@ export default {
   border-radius: 16px;
   padding: 20px;
   height: -webkit-fill-available;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 @media (max-width: 968px) {
+  .resume {
+    padding: 16px;
+  }
+  .topSection, .nameBlock, .aboutBlock {
+    gap: 16px;
+  }
+
   .topSection {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .nameBlock {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    order: 1;
+    text-align: center;
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .sidebarBlock {
+    order: 2;
+  }
+
+  .aboutBlock {
+    order: 3;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .nameBlock {
+    padding: 16px;
   }
 }
 </style>

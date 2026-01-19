@@ -57,4 +57,16 @@ export default {
     opacity: 0.8;
   }
 }
+
+@media (max-width: 968px) {
+  .skillItem {
+    padding: 10px 12px;
+    gap: 8px;
+    border-radius: 10px;
+  }
+
+  .skillInfo {
+    font-size: 12px;
+  }
+}
 </style>

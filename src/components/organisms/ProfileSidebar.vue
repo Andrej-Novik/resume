@@ -65,7 +65,7 @@ export default {
   grid-template-columns: auto auto;
   gap: 24px;
   width: auto;
-  margin: 0 20px 20px 20px;
+  margin: 0 16px 16px 16px;
 }
 
 .contactsHeader {
@@ -87,5 +87,16 @@ export default {
   height: 3px;
   background-color: $main;
   border-radius: 2px;
+}
+
+@media (max-width: 968px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .contactsHeader {
+    padding: 16px;
+  }
 }
 </style>

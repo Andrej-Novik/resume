@@ -42,6 +42,9 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: $secondary;
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .educationPeriod {
@@ -55,5 +58,26 @@ export default {
   line-height: 1.6;
   color: $main;
   margin: 0;
+}
+
+@media (max-width: 968px) {
+  .educationSection {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .educationContent {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .educationPeriod {
+    font-size: 12px;
+  }
+
+  .educationText {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 </style>

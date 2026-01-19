@@ -55,6 +55,19 @@ export default {
     opacity: 0.7;
   }
 
+  @media (max-width: 968px) {
+    background-color: #F4F4F4;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    color: $main;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    gap: 6px;
+  }
+
   span {
     word-break: break-word;
   }

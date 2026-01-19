@@ -68,5 +68,11 @@ export default {
   .workItemWrapper {
     max-width: 100%;
   }
+  .workSection {
+    padding: 16px;
+  }
+  .workHeader {
+    gap: 8px;
+  }
 }
 </style>
