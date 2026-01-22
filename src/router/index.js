@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -9,7 +9,9 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  // GitHub Pages doesn't support SPA history routing without extra 404 rewrites.
+  // Hash history works reliably on static hosting.
+  history: createWebHashHistory(),
   routes
 })
 
