@@ -134,11 +134,12 @@ export default {
     gap: 12px;
     margin-bottom: 12px;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .colorLegend {
     gap: 12px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .skillsList {

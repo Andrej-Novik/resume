@@ -59,6 +59,12 @@ export default {
     height: 100%;
     object-fit: cover;
   }
+  @media (max-width: 968px) {
+    max-height: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
 }
 
 .contacts {
