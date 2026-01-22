@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.section">
-    <SectionHeader icon="about-me" title="About me" />
+    <SectionHeader icon="about-me" title="Обо мне" />
     <div :class="$style.aboutText">
       <p v-for="(paragraph, index) in paragraphs" :key="index">{{ paragraph }}</p>
     </div>

@@ -1,10 +1,10 @@
 <template>
   <aside :class="$style.sidebar">
     <div :class="$style.avatar">
-      <img src="@/assets/img/avatar.png" alt="Anton Nikonchuk" />
+      <img src="@/assets/img/avatar.jpg" alt="avatar" />
     </div>
     <div :class="$style.contactsHeader">
-      <h2 :class="$style.contactsTitle">Contacts</h2>
+      <h2 :class="$style.contactsTitle">Контакты</h2>
       <div :class="$style.contactsLine"></div>
     </div>
     <div :class="$style.contacts">
@@ -52,7 +52,8 @@ export default {
   width: 100%;
   height: auto;
   overflow: hidden;
-
+  max-height: 264px;
+  border-radius: 16px 16px 0 0;
   img {
     width: 100%;
     height: 100%;

@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.workSection">
-    <SectionHeader icon="work" title="Work Experience" />
+    <SectionHeader icon="work" title="Опыт работы" />
     <div :class="$style.workList">
       <div
         v-for="(work, index) in workExperiences"

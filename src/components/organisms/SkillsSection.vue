@@ -1,7 +1,7 @@
 <template>
   <section :class="$style.skillsSection">
     <div :class="$style.skillsHeader">
-      <SectionHeader icon="skills" title="Hard skills" />
+      <SectionHeader icon="skills" title="Технологии" />
       <div :class="$style.colorLegend">
         <div :class="$style.legendItem">
           <div :class="[$style.legendColor, $style.legendRed]"></div>

@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.educationSection">
-    <SectionHeader icon="education" title="Education" />
+    <SectionHeader icon="education" title="Образование" />
     <div :class="$style.educationContent">
       <div :class="$style.educationPeriod">{{ period }}</div>
       <p :class="$style.educationText">{{ text }}</p>
